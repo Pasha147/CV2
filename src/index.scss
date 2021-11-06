@@ -1,0 +1,44 @@
+@import "./nullstyle.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: solid 2px red;
+  height: auto;
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    border: solid 2px rgb(177, 177, 59);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    header {
+      h1 {
+        font-size: 3rem;
+      }
+      border: 2px solid rgb(51, 47, 47);
+    }
+
+    main {
+      height: 100%;
+      flex: 1 1 auto;
+      border: 2px solid rgb(97, 204, 93);
+      nav {
+        height: 3rem;
+        border: rgb(27, 27, 20) solid 1px;
+      }
+      article {
+        height: 10rem;
+        border: rgb(27, 27, 20) solid 1px;
+      }
+    }
+
+    footer {
+      border: 2px solid rgb(93, 100, 204);
+    }
+  }
+}
