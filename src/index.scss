@@ -12,16 +12,10 @@ body {
   .container {
     max-width: 1024px;
     margin: 0 auto;
-    border: solid 2px rgb(177, 177, 59);
+    border: solid 2px #437ab8;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    header {
-      h1 {
-        font-size: 3rem;
-      }
-      border: 2px solid rgb(51, 47, 47);
-    }
 
     main {
       height: 100%;
