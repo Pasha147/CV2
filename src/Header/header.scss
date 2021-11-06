@@ -2,6 +2,7 @@
   .header {
     position: relative;
     color: #f0f4f8ad;
+    letter-spacing: 0.05em;
     text-align: center;
     background-image: linear-gradient(
         to bottom,
@@ -29,10 +30,10 @@
     }
     h1 {
       font-weight: 600;
-      font-size: 3.2rem;
+      font-size: 3rem;
     }
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       // border-bottom: #4477b396 3px solid;
       // padding-bottom: 0.5rem;
     }
@@ -53,8 +54,8 @@
         padding: 3px;
         border: 2px solid rgba(255, 255, 255, 0.575);
         border-radius: 50%;
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.4rem;
+        height: 2.4rem;
       }
     }
     border: 2px solid rgb(51, 47, 47);
