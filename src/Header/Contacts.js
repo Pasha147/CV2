@@ -1,6 +1,7 @@
 import React from "react";
 import "./contacts.scss";
-import { FiUser, FiHome, FiPhone, FiMail, FiGithub } from "react-icons/fi";
+import { FiHome, FiPhone, FiMail, FiGithub } from "react-icons/fi";
+// FiUser,
 import { AiOutlineSkype } from "react-icons/ai";
 
 function Contacts() {
