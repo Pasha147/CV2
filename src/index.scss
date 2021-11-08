@@ -13,16 +13,11 @@ body {
   height: auto;
   background-color: $bg;
   .container {
-    // transition: 0.3s color ease-in;
     max-width: 1024px;
     margin: 0 auto;
     // border: solid 2px #437ab8;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
-    // footer {
-    //   border: 2px solid rgb(93, 100, 204);
-    // }
   }
 }

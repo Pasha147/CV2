@@ -21,7 +21,7 @@
     padding: 0.3rem 0 0.3rem 0.25rem;
     img {
       border: 3px solid #e5e9ee7c;
-      box-shadow: 0 0 0.75rem #f7f7f7c5;
+      box-shadow: 0 0 1rem #ffffffe3;
       border-radius: 50%;
       width: 8.8rem;
     }
@@ -41,9 +41,10 @@
     font-size: 1.5rem;
   }
   .underline {
+    box-shadow: 0 0 1rem #ffffffe3;
     // margin-top: 0.5rem;
-    height: 3px;
-    width: 80%;
+    height: 2px;
+    width: 85%;
     background-color: #8fafd465;
     ::after {
       content: "";
@@ -71,6 +72,7 @@
     }
   }
   .underline {
-    background-color: #8fafd465;
+    background-color: #8fafd4cb;
+    box-shadow: 0 0 0.5rem #f7f7f79a;
   }
 }

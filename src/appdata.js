@@ -8,8 +8,9 @@ export const contacts = [
 ];
 
 export const nav = [
-  { name: "SKILLS", key: "1" },
-  { name: "PROJECTS", key: "2" },
-  { name: "EDUCATION", key: "3" },
-  { name: "WORK EXPERIENCE", key: "4" },
+  { id: 0, name: "MAIN", artHeader: "Main" },
+  { id: 1, name: "SKILLS", artHeader: "Skills" },
+  { id: 2, name: "PROJECTS", artHeader: "Projects" },
+  { id: 3, name: "EDUCATION", artHeader: "Education" },
+  { id: 4, name: "WORK EXPERIENCE", artHeader: "Work Experience" },
 ];

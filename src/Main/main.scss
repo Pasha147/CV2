@@ -1,35 +1,82 @@
 main {
+  color: rgba(255, 255, 255, 0.829);
   height: 100%;
   flex: 1 1 auto;
   // border: 2px solid rgb(97, 204, 93);
 }
 nav {
-  height: 3rem;
+  transition: 0.3s all ease-in;
+  padding-top: 0.5rem;
+  height: auto;
   border: rgb(27, 27, 20) solid 1px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   button {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(150, 150, 150, 0.5),
+        rgba(39, 39, 39, 0.87)
+      ),
+      url("../img/river1.jpg");
+
+    min-width: 6rem;
+    margin: 0.25rem 0.15rem;
+    height: 1.8rem;
     font-size: 1rem;
     font-weight: 600;
     padding: 0 0.25rem;
     background-color: rgba(189, 216, 238, 0.747);
     border-radius: 0.25rem;
-    box-shadow: 0 0 0.25rem rgba(189, 216, 238, 0.747);
+    box-shadow: 0 0 0.25rem rgba(189, 216, 238, 0.562);
   }
-}
-
-.light nav {
-  background-color: rgba(134, 159, 173, 0.788);
-  border: rgb(27, 27, 20) solid 1px;
-  button {
-    color: rgba(217, 250, 237, 0.884);
-    background-color: rgba(27, 37, 44, 0.747);
-    box-shadow: 0 0 0.25rem rgba(84, 90, 95, 0.747);
+  .navBtn-active {
+    color: rgba(255, 255, 255, 0.705);
+    // background-color: rgba(233, 237, 240, 0.925);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(209, 202, 202, 0.5),
+        rgba(99, 99, 99, 0.87)
+      ),
+      url("../img/river1.jpg");
+    box-shadow: 0 0 1rem rgba(242, 244, 247, 0.986);
   }
 }
 
 article {
-  height: 10rem;
-  border: rgb(27, 27, 20) solid 1px;
+  color: rgba(255, 255, 255, 0.76);
+  background-color: rgb(8, 31, 48);
+  border: rgb(20, 27, 27) solid 1px;
+}
+
+.light {
+  nav {
+    background-color: rgba(134, 159, 173, 0.788);
+    border: rgb(27, 27, 20) solid 1px;
+    button {
+      color: rgba(217, 250, 237, 0.705);
+      // background-color: rgba(27, 37, 44, 0.863);
+      background-image: linear-gradient(
+          to bottom,
+          rgba(78, 78, 78, 0.699),
+          rgba(39, 39, 39, 0.87)
+        ),
+        url("../img/river1.jpg");
+      box-shadow: 0 0 0.25rem rgba(84, 90, 95, 0.747);
+    }
+  }
+  article {
+    color: rgba(0, 0, 0, 0.747);
+    background-color: rgb(113, 142, 165);
+    border: rgb(27, 27, 20) solid 1px;
+  }
+  .navBtn-active {
+    color: white;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.979);
+    border: rgb(230, 236, 236) solid 2px;
+    border-radius: 6px;
+    box-shadow: 0 0 0.5rem rgb(255, 255, 255);
+    background-color: rgba(27, 37, 44, 0.315);
+  }
 }
