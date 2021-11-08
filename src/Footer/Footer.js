@@ -1,7 +1,11 @@
+import Contacts from "../Header/Contacts";
+import "./footer.scss";
+
 function Footer() {
   return (
     <footer className="footer">
-      <h1>Footer</h1>
+      <p>Copyright 2021</p>
+      <Contacts />
     </footer>
   );
 }

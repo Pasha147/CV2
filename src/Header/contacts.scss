@@ -1,0 +1,21 @@
+.contacts {
+  padding-right: 0.2rem;
+  $d: 2.6rem;
+  $d1: $d * 0.65;
+  li {
+    border: 2px solid rgba(255, 255, 255, 0.575);
+    border-radius: 50%;
+    width: $d;
+    height: $d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    width: $d1;
+    height: $d1;
+  }
+}

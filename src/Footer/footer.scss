@@ -1,0 +1,55 @@
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  transition: 0.3s all ease-in;
+  box-shadow: 0px 0.5rem 0.5rem #283549;
+  position: relative;
+  color: #ffffffda;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.87)
+    ),
+    url("../img/river1.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  p {
+    width: 50%;
+  }
+  .contacts {
+    justify-content: end;
+
+    $d: 2rem;
+    $d1: $d * 0.65;
+    li {
+      margin: 0 0.2rem;
+      width: $d;
+      height: $d;
+    }
+
+    &__item {
+      width: $d1;
+      height: $d1;
+    }
+  }
+}
+
+.light .footer {
+  color: #103246da;
+  text-shadow: 0 0 8px rgba(18, 18, 19, 0.5);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.685),
+      rgba(54, 60, 65, 0.808)
+    ),
+    url("../img/river1.jpg");
+  .contacts {
+    li {
+      border: 2px solid rgba(20, 59, 77, 0.699);
+    }
+  }
+}

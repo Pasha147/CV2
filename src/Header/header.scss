@@ -1,63 +1,81 @@
-.container {
-  .header {
-    position: relative;
-    color: #f0f4f8ad;
-    letter-spacing: 0.05em;
-    text-align: center;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url("./img/river1.jpg");
+.header {
+  transition: 0.3s all ease-in;
+  // $bg: rgb(0, 0, 0, 0.5);
+  box-shadow: 0px 0.5rem 0.5rem #283549;
+  position: relative;
+  color: #ffffffda;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  // letter-spacing: 0.05em;
+  text-align: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.87)
+    ),
+    url("../img/river1.jpg");
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    &__logo {
-      img {
-        border: 3px solid #e5e9ee7c;
-        border-radius: 50%;
-        width: 9rem;
-      }
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  &__logo {
+    padding: 0.3rem 0 0.3rem 0.25rem;
+    img {
+      border: 3px solid #e5e9ee7c;
+      box-shadow: 0 0 0.75rem #f7f7f7c5;
+      border-radius: 50%;
+      width: 8.8rem;
     }
-    &__info {
-      flex: 1 1 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-    }
-    h1 {
-      font-weight: 600;
-      font-size: 2.4rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-      // border-bottom: #4477b396 3px solid;
-      // padding-bottom: 0.5rem;
-    }
-    .underline {
-      // margin-top: 0.5rem;
-      height: 3px;
-      width: 80%;
-      background-color: #8fafd496;
-      ::after {
-        content: "";
-      }
-    }
-    .contacts {
-      width: 90%;
-      display: flex;
-      justify-content: space-between;
-      &__item {
-        padding: 3px;
-        border: 2px solid rgba(255, 255, 255, 0.575);
-        border-radius: 50%;
-        width: 2.4rem;
-        height: 2.4rem;
-      }
-    }
-    border: 2px solid rgb(51, 47, 47);
   }
+  &__info {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .underline {
+    // margin-top: 0.5rem;
+    height: 3px;
+    width: 80%;
+    background-color: #8fafd465;
+    ::after {
+      content: "";
+    }
+  }
+
+  // border: 2px solid rgb(51, 47, 47);
+}
+
+.light .header {
+  box-shadow: 0px 0.5rem 0.5rem #283549;
+  color: #103246da;
+  text-shadow: 0 0 8px rgba(18, 18, 19, 0.5);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.685),
+      rgba(54, 60, 65, 0.808)
+    ),
+    url("../img/river1.jpg");
+
+  &__logo {
+    img {
+      border: 2px solid #5a6f883f;
+      box-shadow: 0 0 0.5rem #f7f7f731;
+    }
+  }
+  .underline {
+    background-color: #8fafd465;
+  }
+  // .contacts {
+  //   li {
+  //     border: 2px solid rgba(255, 255, 255, 0.575);
+  //   }
+  // }
 }

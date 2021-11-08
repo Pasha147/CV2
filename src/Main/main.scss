@@ -1,0 +1,35 @@
+main {
+  height: 100%;
+  flex: 1 1 auto;
+  // border: 2px solid rgb(97, 204, 93);
+}
+nav {
+  height: 3rem;
+  border: rgb(27, 27, 20) solid 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 0.25rem;
+    background-color: rgba(189, 216, 238, 0.747);
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.25rem rgba(189, 216, 238, 0.747);
+  }
+}
+
+.light nav {
+  background-color: rgba(134, 159, 173, 0.788);
+  border: rgb(27, 27, 20) solid 1px;
+  button {
+    color: rgba(217, 250, 237, 0.884);
+    background-color: rgba(27, 37, 44, 0.747);
+    box-shadow: 0 0 0.25rem rgba(84, 90, 95, 0.747);
+  }
+}
+
+article {
+  height: 10rem;
+  border: rgb(27, 27, 20) solid 1px;
+}

@@ -1,38 +1,28 @@
 @import "./nullstyle.scss";
 
 body {
+  $bg: rgb(3, 15, 29);
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border: solid 2px red;
+  // border: solid 2px red;
   height: auto;
+  background-color: $bg;
   .container {
+    // transition: 0.3s color ease-in;
     max-width: 1024px;
     margin: 0 auto;
-    border: solid 2px #437ab8;
+    // border: solid 2px #437ab8;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 
-    main {
-      height: 100%;
-      flex: 1 1 auto;
-      border: 2px solid rgb(97, 204, 93);
-      nav {
-        height: 3rem;
-        border: rgb(27, 27, 20) solid 1px;
-      }
-      article {
-        height: 10rem;
-        border: rgb(27, 27, 20) solid 1px;
-      }
-    }
-
-    footer {
-      border: 2px solid rgb(93, 100, 204);
-    }
+    // footer {
+    //   border: 2px solid rgb(93, 100, 204);
+    // }
   }
 }
