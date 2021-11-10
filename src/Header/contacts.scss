@@ -2,6 +2,9 @@
   padding-right: 0.2rem;
   $d: 3rem;
   $d1: $d * 0.65;
+  width: 98%;
+  display: flex;
+  justify-content: center;
   li {
     border: 2px solid rgba(255, 255, 255, 0.575);
     border-radius: 50%;
@@ -10,10 +13,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 00.1rem;
   }
-  width: 98%;
-  display: flex;
-  justify-content: space-between;
+
   &__item {
     width: $d1;
     height: $d1;

@@ -13,4 +13,5 @@ export const nav = [
   { id: 2, name: "PROJECTS", artHeader: "Projects" },
   { id: 3, name: "EDUCATION", artHeader: "Education" },
   { id: 4, name: "WORK EXPERIENCE", artHeader: "Work Experience" },
+  { id: 5, name: "CONTACTS", artHeader: "Contacts" },
 ];

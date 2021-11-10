@@ -7,6 +7,7 @@ import Mainart from "./articles/Mainart";
 import Projects from "./articles/Projects";
 import Education from "./articles/Education";
 import Workexp from "./articles/Workexp";
+import ContactsArt from "./articles/ContactsArt";
 
 function Main() {
   const [curArticle, setCurArticle] = useState(0);
@@ -30,6 +31,7 @@ function Main() {
       {curArticle === 2 && <Projects />}
       {curArticle === 3 && <Education />}
       {curArticle === 4 && <Workexp />}
+      {curArticle === 5 && <ContactsArt />}
     </main>
   );
 }

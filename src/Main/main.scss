@@ -1,16 +1,17 @@
 main {
   color: rgba(255, 255, 255, 0.829);
-  height: 100%;
   flex: 1 1 auto;
   // border: 2px solid rgb(97, 204, 93);
+  display: flex;
+  flex-direction: column;
 }
 nav {
   transition: 0.3s all ease-in;
   padding-top: 0.5rem;
-  height: auto;
+  // height: auto;
   border: rgb(27, 27, 20) solid 1px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   button {
@@ -24,6 +25,7 @@ nav {
     min-width: 6rem;
     margin: 0.25rem 0.15rem;
     height: 1.8rem;
+    text-shadow: 0 0 3px rgba(18, 18, 19, 0.5);
     font-size: 1rem;
     font-weight: 600;
     padding: 0 0.25rem;
@@ -32,6 +34,7 @@ nav {
     box-shadow: 0 0 0.25rem rgba(189, 216, 238, 0.562);
   }
   .navBtn-active {
+    text-shadow: 0 0 3px rgba(231, 231, 233, 0.5);
     color: rgba(255, 255, 255, 0.705);
     // background-color: rgba(233, 237, 240, 0.925);
     background-image: linear-gradient(
@@ -47,7 +50,9 @@ nav {
 article {
   color: rgba(255, 255, 255, 0.76);
   background-color: rgb(8, 31, 48);
-  border: rgb(20, 27, 27) solid 1px;
+  // border: rgb(239, 243, 243) solid 2px;
+  height: 20rem;
+  flex: 1 1 auto;
 }
 
 .light {
@@ -59,7 +64,7 @@ article {
       // background-color: rgba(27, 37, 44, 0.863);
       background-image: linear-gradient(
           to bottom,
-          rgba(78, 78, 78, 0.699),
+          rgba(112, 112, 112, 0.5),
           rgba(39, 39, 39, 0.87)
         ),
         url("../img/river1.jpg");
@@ -69,7 +74,6 @@ article {
   article {
     color: rgba(0, 0, 0, 0.747);
     background-color: rgb(113, 142, 165);
-    border: rgb(27, 27, 20) solid 1px;
   }
   .navBtn-active {
     color: white;
