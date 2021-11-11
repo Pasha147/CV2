@@ -1,0 +1,40 @@
+.skillsArt {
+  height: auto;
+  padding-top: 0.5rem;
+  //   border: tomato solid 2px;
+  .checkboxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__item {
+      display: inline-block;
+      margin: 0.2rem;
+      font-size: 1.2rem;
+      min-width: 5rem;
+    }
+  }
+  .skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .card {
+    text-align: center;
+    margin: 0.5rem 0.25rem;
+    border: white solid 2px;
+    width: 7.4rem;
+    height: 6rem;
+  }
+  .underline {
+    transition: 0.3s all ease-in;
+    align-self: center;
+    box-shadow: 0 0 1rem #ffffffe3;
+    // margin-top: 0.5rem;
+    height: 2px;
+    width: 98%;
+    background-color: #8fafd465;
+    ::after {
+      content: "";
+    }
+  }
+}

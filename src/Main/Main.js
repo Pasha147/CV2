@@ -2,13 +2,6 @@ import React, { useState } from "react";
 import "./main.scss";
 import { nav } from "../appdata";
 
-import Skills from "./articles/Skills";
-import Mainart from "./articles/Mainart";
-import Projects from "./articles/Projects";
-import Education from "./articles/Education";
-import Workexp from "./articles/Workexp";
-import ContactsArt from "./articles/ContactsArt";
-
 function Main() {
   const [curArticle, setCurArticle] = useState(0);
   return (
@@ -26,12 +19,7 @@ function Main() {
           );
         })}
       </nav>
-      {curArticle === 0 && <Mainart />}
-      {curArticle === 1 && <Skills />}
-      {curArticle === 2 && <Projects />}
-      {curArticle === 3 && <Education />}
-      {curArticle === 4 && <Workexp />}
-      {curArticle === 5 && <ContactsArt />}
+      {nav[curArticle].article}
     </main>
   );
 }
