@@ -5,20 +5,35 @@
   .burger {
     display: flex;
     justify-content: center;
+    margin-bottom: 00.5rem;
     .btn {
+      padding: 0.1rem;
+      width: 25%;
+      height: auto;
+      //   border: none;
+      margin: 0 0.5rem;
       background-image: none;
-      background-color: linear-gradient(
-        to bottom,
-        rgb(150, 150, 150),
-        rgba(17, 17, 17, 0.87)
-      );
-      color: tomato;
+      //   background-color: linear-gradient(rgb(150, 150, 150), rgb(245, 12, 12));
+      background: linear-gradient(0.5turn, #368dc781, #27556952);
+      color: rgba(238, 245, 247, 0.774);
+      text-shadow: 0 0 2px rgba(231, 231, 233, 0.5);
+      font-size: 1.2rem;
+      box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.699);
+    }
+    .btnOff {
+      color: rgba(22, 22, 22, 0.774);
+      text-shadow: 0 0 2px rgba(27, 27, 27, 0.5);
+      box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.329);
     }
     .underline {
-      width: 20%;
+      width: 30%;
+      margin: 0;
     }
   }
   .checkboxes {
+    transition: height 0.4s ease-in;
+    height: 4.2rem;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -26,8 +41,17 @@
       display: inline-block;
       margin: 0.2rem;
       font-size: 1.2rem;
-      min-width: 5rem;
+      //   min-width: 5rem;
+      padding-right: 0.5rem;
     }
+    input {
+      margin-right: 0.25rem;
+    }
+    margin: 0.2rem 0;
+  }
+  .checkboxesOff {
+    height: 0;
+    // margin-top: 0.1rem;
   }
   .skills {
     display: flex;
@@ -35,22 +59,52 @@
     flex-wrap: wrap;
   }
   .card {
-    text-align: center;
+    // text-align: center;
     margin: 0.5rem 0.25rem;
-    border: white solid 2px;
+    border: rgba(255, 255, 255, 0.459) solid 1px;
+    box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.616);
+
+    border-radius: 8px;
     width: 7.4rem;
     height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(84, 120, 141, 0.685);
+    &__icon {
+      width: 2rem;
+      height: 2rem;
+      margin: 0.25rem auto;
+    }
   }
   .underline {
+    margin: 0 auto;
     transition: 0.3s all ease-in;
     align-self: center;
     box-shadow: 0 0 1rem #ffffffe3;
     // margin-top: 0.5rem;
     height: 2px;
-    width: 98%;
+    width: 97%;
     background-color: #8fafd465;
     ::after {
       content: "";
     }
+  }
+}
+.light .skillsArt {
+  .burger {
+    .btn {
+      box-shadow: 0 0 0.5rem rgb(0, 0, 0);
+    }
+  }
+  .underline {
+    box-shadow: 0 0 1rem rgba(7, 7, 7, 0.753);
+    background-color: rgba(7, 7, 7, 0.219);
+  }
+  .card {
+    background-color: rgba(52, 74, 87, 0.685);
+
+    color: rgba(255, 255, 255, 0.918);
   }
 }

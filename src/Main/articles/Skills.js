@@ -4,11 +4,14 @@ import "./skills.scss";
 import { skills } from "../../appdata";
 
 function Skills() {
+  //get types from skills
   const [types, setTypes] = useState(
     ["all", ...new Set(skills.map((item) => item.type))].map((e) => {
       return { name: e, ch: true };
     })
   );
+
+  const [filtersOn, setFiltersOn] = useState(false);
 
   // console.log("types:>>", types);
   const skillCard = (item) => {
@@ -39,10 +42,17 @@ function Skills() {
     <article className="skillsArt">
       <div className="burger">
         <div className="underline"></div>
-        <button className="btn">filters</button>
+        <button
+          className={`btn ${!filtersOn ? "btnOff" : ""}`}
+          onClick={() => {
+            setFiltersOn(!filtersOn);
+          }}
+        >
+          filters
+        </button>
         <div className="underline"></div>
       </div>
-      <div className="checkboxes">
+      <div className={`checkboxes ${!filtersOn ? "checkboxesOff" : ""}`}>
         {types.map((item, index) => {
           return (
             <div className="checkboxes__item" key={index}>

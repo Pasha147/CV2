@@ -10,7 +10,9 @@ function Main() {
         {nav.map((item) => {
           return (
             <button
-              className={`navBtn ${item.id === curArticle && "navBtn-active"}`}
+              className={`navBtn ${
+                item.id === curArticle ? "navBtn-active" : ""
+              }`}
               key={item.id}
               onClick={() => setCurArticle(item.id)}
             >
