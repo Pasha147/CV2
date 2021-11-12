@@ -4,13 +4,13 @@ import "./skills.scss";
 import { skills } from "../../appdata";
 
 function Skills() {
-  const [allCheck, setAllCheck] = useState(true);
-  const [langCheck, setLangCheck] = useState(true);
-  const [libCheck, setLibCheck] = useState(true);
-  const [techCheck, setTechCheck] = useState(true);
-  const [netResCheck, setNetResCheck] = useState(true);
-  const [progCheck, setProgCheck] = useState(true);
+  const [types, setTypes] = useState(
+    ["all", ...new Set(skills.map((item) => item.type))].map((e) => {
+      return { name: e, ch: true };
+    })
+  );
 
+  // console.log("types:>>", types);
   const skillCard = (item) => {
     return (
       <div className="card" key={item.id}>
@@ -21,110 +21,54 @@ function Skills() {
     );
   };
 
+  const handleCheck = (index) => {
+    let newTypes = [...types];
+    if (types[index].name === "all") {
+      const newCh = !types[index].ch;
+      newTypes.forEach((e) => {
+        e.ch = newCh;
+      });
+    } else {
+      newTypes[index].ch = !types[index].ch;
+      // console.log("newTypes", newTypes);
+    }
+    setTypes(newTypes);
+  };
+
   return (
     <article className="skillsArt">
-      <div className="checkboxes">
-        <div className="checkboxes__item">
-          <input
-            type="checkbox"
-            id="0"
-            name="all"
-            checked={allCheck}
-            onChange={() => {
-              const newAllCheck = !allCheck;
-              setAllCheck(newAllCheck);
-              setLangCheck(newAllCheck);
-              setLibCheck(newAllCheck);
-              setTechCheck(newAllCheck);
-              setNetResCheck(newAllCheck);
-              setProgCheck(newAllCheck);
-            }}
-          />
-          <label htmlFor="all">All</label>
-        </div>
-        <div className="checkboxes__item">
-          <input
-            type="checkbox"
-            id="1"
-            name="languages"
-            checked={langCheck}
-            onChange={() => {
-              setLangCheck(!langCheck);
-            }}
-          />
-          <label htmlFor="languages">Languages</label>
-        </div>
-        <div className="checkboxes__item">
-          <input
-            type="checkbox"
-            id="2"
-            name="libreries"
-            checked={libCheck}
-            onChange={() => {
-              setLibCheck(!libCheck);
-            }}
-          />
-          <label htmlFor="libreries">libreries</label>
-        </div>
-        <div className="checkboxes__item">
-          <input
-            type="checkbox"
-            id="3"
-            name="technologies"
-            checked={techCheck}
-            onChange={() => {
-              setTechCheck(!techCheck);
-            }}
-          />
-          <label htmlFor="technologies">Technologies</label>
-        </div>
-        <div className="checkboxes__item">
-          <input
-            type="checkbox"
-            id="4"
-            name="netResources"
-            checked={netResCheck}
-            onChange={() => {
-              setNetResCheck(!netResCheck);
-            }}
-          />
-          <label htmlFor="netResources">Net resources</label>
-        </div>
-        <div className="checkboxes__item">
-          <input
-            type="checkbox"
-            id="5"
-            name="programs"
-            checked={progCheck}
-            onChange={() => {
-              setProgCheck(!progCheck);
-            }}
-          />
-          <label htmlFor="programs">Programs</label>
-        </div>
+      <div className="burger">
+        <div className="underline"></div>
+        <button className="btn">filters</button>
+        <div className="underline"></div>
       </div>
+      <div className="checkboxes">
+        {types.map((item, index) => {
+          return (
+            <div className="checkboxes__item" key={index}>
+              <input
+                type="checkbox"
+                id={index}
+                name={item.name}
+                checked={item.ch}
+                onChange={() => handleCheck(index)}
+              />
+              <label htmlFor={item.name}>{item.name}</label>
+            </div>
+          );
+        })}
+      </div>
+
       <div className="underline"></div>
       <div className="skills">
-        {langCheck &&
-          skills
-            .filter((item) => item.type === "language")
-            .map((item) => skillCard(item))}
-        {libCheck &&
-          skills
-            .filter((item) => item.type === "library")
-            .map((item) => skillCard(item))}
-        {techCheck &&
-          skills
-            .filter((item) => item.type === "technology")
-            .map((item) => skillCard(item))}
-        {netResCheck &&
-          skills
-            .filter((item) => item.type === "netResources")
-            .map((item) => skillCard(item))}
-        {progCheck &&
-          skills
-            .filter((item) => item.type === "programs")
-            .map((item) => skillCard(item))}
+        {types.map((e) => {
+          return (
+            e.ch &&
+            skills
+              .filter((item) => item.type === e.name)
+              .map((item) => skillCard(item))
+          );
+        })}
       </div>
     </article>
   );

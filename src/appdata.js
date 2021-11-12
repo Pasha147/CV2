@@ -107,7 +107,7 @@ export const skills = [
   {
     id: 9,
     name: "Node",
-    text: "(Express, ejs, ...)",
+    text: "(Express, ejs,...)",
     icon: <FaNodeJs />,
     type: "language",
   },
@@ -222,6 +222,13 @@ export const skills = [
     text: null,
     icon: null,
     type: "programs",
+  },
+  {
+    id: 27,
+    name: "kkkkkk",
+    text: null,
+    icon: null,
+    type: "plagin",
   },
 ];
 //================================

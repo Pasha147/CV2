@@ -2,6 +2,22 @@
   height: auto;
   padding-top: 0.5rem;
   //   border: tomato solid 2px;
+  .burger {
+    display: flex;
+    justify-content: center;
+    .btn {
+      background-image: none;
+      background-color: linear-gradient(
+        to bottom,
+        rgb(150, 150, 150),
+        rgba(17, 17, 17, 0.87)
+      );
+      color: tomato;
+    }
+    .underline {
+      width: 20%;
+    }
+  }
   .checkboxes {
     display: flex;
     justify-content: center;
