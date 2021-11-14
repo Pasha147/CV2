@@ -16,6 +16,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header__logo" onClick={changeTheme}>
+        {/* pablic/img */}
         <img src="./img/Ya3.jpg" alt="Ya" />
       </div>
       <div className="header__info">
