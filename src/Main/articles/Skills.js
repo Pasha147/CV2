@@ -85,35 +85,3 @@ function Skills() {
 }
 
 export default Skills;
-
-/*
-
-• IoLogoJavascript	JavaScript (ES6); 
-• FaReact React (  React-redux, React-router... ); 
-• SiRedux Redux (Redux, React-redux), RxJS;
-•	GrHtml5 HTML, DiCss3 CSS (BEM), DiSass SASS (SCSS), BsBootstrap Bootstrap;
-• FaNodeJs Node (SiExpress Express, ejs, ...)
-•	FiGithub Git, FaGulp Gulp, IoLogoFirebase Firebase, GrHeroku Heroku, SiNetlify Netlyfy,...;
-• SiVisualstudiocode	VS Code, WebStorm SiWebstorm, Prepros, GiZeppelin Zeplin;
-•	C#, C++, Matlab, QBasic;
-•	DiPhotoshop Photoshop, MathCad, Autocad.
-
-LANGUAGES: 
-•	Ukrainian – native, 
-•	Russian – fluent, 
-•	English – intermediate
-
-
-SKILLS
-•	JavaScript (ES6); 
-• React (React-redux, React-router... ); 
-• Redux (Redux, React-redux), RxJS;
-•	HTML, CSS (BEM), SASS (SCSS), Bootstrap;
-• Node (Express, ejs, ...)
-•	Git, Gulp, Firebase, Heroku, Netlyfy,...;
-•	VS Code, WebStorm, Prepros, Zeplin;
-•	C#, C++, Matlab, QBasic;
-•	Photoshop, MathCad, Autocad.
-
-
-*/

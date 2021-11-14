@@ -6,6 +6,12 @@ import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
 
 function App() {
+  // useEffect(() => {
+  //   let pathname = window.location.pathname;
+  //   if (pathname !== "/") {
+  //     window.location = "/";
+  //   }
+  // }, []);
   return (
     <div className="container">
       <Header />

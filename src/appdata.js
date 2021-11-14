@@ -4,6 +4,7 @@ import Projects from "./Main/articles/Projects";
 import Education from "./Main/articles/Education";
 import Workexp from "./Main/articles/Workexp";
 import ContactsArt from "./Main/articles/ContactsArt";
+import AboutMe from "./Main/articles/Aboutme";
 
 //SKILLS
 import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
@@ -32,17 +33,50 @@ export const contacts = [
 
 //buttons in nav
 export const nav = [
-  { id: 0, name: "MAIN", artHeader: "Main", article: <Mainart /> },
-  { id: 1, name: "SKILLS", artHeader: "Skills", article: <Skills /> },
-  { id: 2, name: "PROJECTS", artHeader: "Projects", article: <Projects /> },
-  { id: 3, name: "EDUCATION", artHeader: "Education", article: <Education /> },
+  { id: 0, name: "MAIN", artHeader: "Main", article: <Mainart />, route: "/" },
   {
-    id: 4,
+    id: 1,
+    name: "SKILLS",
+    artHeader: "Skills",
+    article: <Skills />,
+    route: "/skills",
+  },
+  {
+    id: 2,
+    name: "EDUCATION",
+    artHeader: "Education",
+    article: <Education />,
+    route: "/education",
+  },
+  {
+    id: 3,
     name: "WORK EXPERIENCE",
     artHeader: "Work Experience",
     article: <Workexp />,
+    route: "/workexp",
   },
-  { id: 5, name: "CONTACTS", artHeader: "Contacts", article: <ContactsArt /> },
+  {
+    id: 4,
+    name: "PROJECTS",
+    artHeader: "Projects",
+    article: <Projects />,
+    route: "/projects",
+  },
+
+  {
+    id: 5,
+    name: "ABOUT ME",
+    artHeader: "About me",
+    article: <AboutMe />,
+    route: "/aboutMe",
+  },
+  {
+    id: 6,
+    name: "CONTACTS",
+    artHeader: "Contacts",
+    article: <ContactsArt />,
+    route: "/contactsArt",
+  },
 ];
 
 //SKILLS============================
@@ -222,13 +256,6 @@ export const skills = [
     text: null,
     icon: null,
     type: "programs",
-  },
-  {
-    id: 27,
-    name: "kkkkkk",
-    text: null,
-    icon: null,
-    type: "plagin",
   },
 ];
 //================================
