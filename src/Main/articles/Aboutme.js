@@ -2,6 +2,8 @@ import { MdOutlineSmokingRooms } from "react-icons/md";
 import { BiDrink } from "react-icons/bi";
 import { FaCannabis, FaSyringe } from "react-icons/fa";
 import { FiSlash } from "react-icons/fi";
+import Slider from "./Slider";
+import { slider } from "../../appdata";
 
 import "./aboutme.scss";
 
@@ -47,6 +49,11 @@ function AboutMe() {
           </div>
           <p>Bad habits</p>
         </div>
+      </div>
+      <div className="underline"></div>
+      <h2>These are my hobbies</h2>
+      <div className="sliderAboutMe">
+        <Slider slider={slider} />
       </div>
     </article>
   );

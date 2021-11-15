@@ -259,3 +259,47 @@ export const skills = [
   },
 ];
 //================================
+
+//SLIDER============================
+export const slider = [
+  {
+    title: "Woodcarving",
+    image: "../img/slider/1.jpg",
+    text: " This is a sugar bowl",
+  },
+  {
+    title: "Sculpture",
+    image: "../img/slider/2.jpg",
+    text: "It's me",
+  },
+  {
+    title: "Aquarium",
+    image: "../img/slider/3.jpg",
+    text: "These are my fish",
+  },
+  {
+    title: "Tourism",
+    image: "../img/slider/5.jpg",
+    text: "This is the Dnieper river",
+  },
+  {
+    title: "Science",
+    image: "../img/slider/6.jpg",
+    text: "2003, Ph.D. from the S.P. Timoshenko Institute of Mechanics",
+  },
+  {
+    title: "Fishing",
+    image: "../img/slider/7.jpg",
+    text: "This is my pike",
+  },
+  {
+    title: "Mushroom hunting",
+    image: "../img/slider/8.jpg",
+    text: "This is my mushroom",
+  },
+  {
+    title: "Motor boats",
+    image: "../img/slider/9.jpg",
+    text: "This is my boat",
+  },
+];
