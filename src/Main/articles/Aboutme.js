@@ -10,6 +10,8 @@ import "./aboutme.scss";
 function AboutMe() {
   return (
     <article className="aboutMe">
+      <div className="underline"></div>
+      <h2>About me</h2>
       <div className="iconsCont">
         <div className="family">
           <div className="family__icons">
@@ -25,7 +27,7 @@ function AboutMe() {
             <span className="age4">15</span>
             <span className="age5">XX</span>
           </div>
-          <p>Family (Me, my wife and my boys)</p>
+          <p>My family (Me, my wife, my boys)</p>
         </div>
 
         <div className="badHabits">

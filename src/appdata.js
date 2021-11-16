@@ -284,8 +284,8 @@ export const slider = [
   },
   {
     title: "Science",
-    image: "../img/slider/6.jpg",
-    text: "2003, Ph.D. from the S.P. Timoshenko Institute of Mechanics",
+    image: "../img/slider/6b.jpg",
+    text: "2006, Ph.D. from the S.P. Timoshenko Institute of Mechanics",
   },
   {
     title: "Fishing",
