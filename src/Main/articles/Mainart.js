@@ -1,56 +1,42 @@
-import "./mainart.scss";
+import React, { useState } from "react";
 
-// import { FiHome, FiPhone, FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
+import "./mainart.scss";
+import { mainArts } from "../../appdata";
+import Mainanim from "./Mainanim";
 
 function Mainart() {
+  const [moreArr, setMoreArr] = useState(
+    new Array(mainArts.length).fill(false)
+  );
+
+  const moreClick = (indexArt) => {
+    let newArr = [...moreArr];
+    newArr[indexArt] = !newArr[indexArt];
+    setMoreArr(newArr);
+  };
   return (
     <article className="mainArt">
-      <h2>Skills</h2>
-      <ul>
-        <li>JavaScript (ES6);</li>
-        <li>React (React-redux, React-router... );</li>
-        <li>Redux (Redux, React-redux), RxJS;</li>
-        <li>HTML, CSS (BEM), SASS (SCSS), Bootstrap;</li>
-        <li>Node (Express, ejs, ...);</li>
-        <li>Git, Gulp, Firebase, Heroku, Netlyfy,...;</li>
-        <li>VS Code, WebStorm, Prepros, Zeplin;</li>
-        <li>C#, C++, Matlab, QBasic;</li>
-        <li>Photoshop, MathCad, Autocad.</li>
-      </ul>
+      <Mainanim />
+      {mainArts.map((art, indexArt) => {
+        return (
+          <div className="article" key={`art${indexArt}`}>
+            <h2>{art.header}</h2>
+            {art.text
+              .slice(0, !moreArr[indexArt] ? art.numberRows : art.text.length)
+              .map((item, index) => {
+                return <p key={index}>{item}</p>;
+              })}
+            {art.text.length > 1 && (
+              <button className="moreBtn" onClick={() => moreClick(indexArt)}>
+                {!moreArr[indexArt] ? "more . . ." : "less . . ."}
+              </button>
+            )}
+            <div className="underline"></div>
+          </div>
+        );
+      })}
     </article>
   );
 }
 
 export default Mainart;
-
-/*
-
-• IoLogoJavascript	JavaScript (ES6); 
-• FaReact React (  React-redux, React-router... ); 
-• SiRedux Redux (Redux, React-redux), RxJS;
-•	GrHtml5 HTML, DiCss3 CSS (BEM), DiSass SASS (SCSS), BsBootstrap Bootstrap;
-• FaNodeJs Node (SiExpress Express, ejs, ...)
-•	FiGithub Git, FaGulp Gulp, IoLogoFirebase Firebase, GrHeroku Heroku, SiNetlify Netlyfy,...;
-• SiVisualstudiocode	VS Code, WebStorm SiWebstorm, Prepros, GiZeppelin Zeplin;
-•	C#, C++, Matlab, QBasic;
-•	DiPhotoshop Photoshop, MathCad, Autocad.
-
-LANGUAGES: 
-•	Ukrainian – native, 
-•	Russian – fluent, 
-•	English – intermediate
-
-
-SKILLS
-•	JavaScript (ES6); 
-• React (React-redux, React-router... ); 
-• Redux (Redux, React-redux), RxJS;
-•	HTML, CSS (BEM), SASS (SCSS), Bootstrap;
-• Node (Express, ejs, ...)
-•	Git, Gulp, Firebase, Heroku, Netlyfy,...;
-•	VS Code, WebStorm, Prepros, Zeplin;
-•	C#, C++, Matlab, QBasic;
-•	Photoshop, MathCad, Autocad.
-
-
-*/

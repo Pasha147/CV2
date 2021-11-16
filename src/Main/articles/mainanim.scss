@@ -1,0 +1,23 @@
+.mainAnim {
+  height: 10rem;
+  border: brown 1px solid;
+  position: relative;
+  .card {
+    $d: 3rem;
+    width: $d;
+    height: $d;
+    background: rgba(82, 125, 204, 0.918);
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+    .card__icon {
+      width: 95%;
+      height: 95%;
+    }
+  }
+}

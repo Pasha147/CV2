@@ -78,6 +78,85 @@ export const nav = [
     route: "/contactsArt",
   },
 ];
+//==================================
+
+//MAIN Article
+
+export const mainArts = [
+  {
+    header: "Skills",
+    numberRows: 3,
+    text: [
+      "•	HTML, CSS (BEM), SASS (SCSS), Bootstrap, . . . ",
+      "• JavaScript (ES6), React, Redux, RxJS, . . . ",
+      "• Node JS (Express, ejs, . . .)",
+      "•	Git, Gulp, Firebase, Heroku, Netlyfy,. . . ",
+      "• VS Code, WebStorm, Prepros, Zeplin, . . . ",
+      "•	C#, C++, Matlab, QBasic",
+      "•	Photoshop, MathCad, Autocad, . . .",
+    ],
+  },
+  {
+    header: "Education",
+    numberRows: 2,
+    text: [
+      "•	2006 - PhD in Engineering sciences, ",
+      "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 Solid Mechanics,",
+      "Timoshenko Institute of Mechanics, National Academy of Sciences of Ukraine, Kyiv, Ukraine",
+      "•	2002 - Master’s engineering degree",
+      "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 in Equipment of the Pharmaceutical and Microbiological Industry.",
+      "National University of Food Technologies, Kyiv, Faculty of Mechanics",
+    ],
+  },
+  {
+    header: "Work experience",
+    numberRows: 1,
+    text: [
+      "• July 2000-now S.P. Timoshenko Institute of Mechanics",
+      "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 2008- now Senior Researcher",
+      "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 2006-2008 Research Scientist",
+      "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 2004-2006 Junior Research Scientist",
+      "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 2000-2004 Engineer",
+      "Job description:",
+      "•	Development and software implementation of numerical analytical procedures in various programming languages and mathematical packages.",
+      "•	Collection, analysis, statistical processing and interpretation of experimental data.",
+      "•	Development, modernization and numerical testing of mathematical models.",
+      "•	Publishing scientific articles.",
+      "•	Lead projects with young scientists.",
+    ],
+  },
+  {
+    header: "",
+    numberRows: 1,
+    text: ["• 2020-now Freelance Web Developer"],
+  },
+  {
+    header: "",
+    numberRows: 1,
+    text: ["• September 2006-2020 Freelance tutor in mathematics and physics"],
+  },
+  {
+    header: "Languages",
+    numberRows: 1,
+    text: [
+      "•	English – intermediate",
+      "•	Ukrainian – native,",
+      "•	Russian – fluent",
+    ],
+  },
+];
+
+//MAIN Animation==================
+export const mainAnim = [
+  <FaHtml5 className="card__icon" />,
+  <DiCss3 className="card__icon" />,
+  <IoLogoJavascript className="card__icon" />,
+  <FaReact className="card__icon" />,
+  <SiRedux className="card__icon" />,
+  <FaNodeJs className="card__icon" />,
+];
+
+//==================================
 
 //SKILLS============================
 
