@@ -156,6 +156,7 @@ export const mainAnim = [
   <FaReact className="card__icon" />,
   <SiRedux className="card__icon" />,
   <FaNodeJs className="card__icon" />,
+  // <FiGithub className="card__icon" />,
 ];
 
 //==================================
@@ -338,8 +339,56 @@ export const skills = [
     icon: null,
     type: "programs",
   },
+  {
+    id: 27,
+    name: "English",
+    text: "intermediate",
+    icon: null,
+    type: "language",
+  },
+  {
+    id: 28,
+    name: "Ukrainian",
+    text: "native",
+    icon: null,
+    type: "language",
+  },
+  {
+    id: 29,
+    name: "Russian",
+    text: "fluent",
+    icon: null,
+    type: "language",
+  },
 ];
+
 //================================
+
+//EDUCATION==========================
+export const educationArts = [
+  {
+    header: "• 2006 - Ph.D. in Engineering sciences (Solid Mechanics)",
+    numberRows: 2,
+    text: [
+      "",
+      "S.P. Timoshenko Institute of Mechanics, National Academy of Sciences of Ukraine,",
+      "Kyiv, Ukraine",
+      "Thesis Topic: “Nonlinear creep of viscoelastic one-directional fibrous composites and their components under tension.” ",
+    ],
+    img: "",
+  },
+  {
+    header: "•	2002 - Master’s engineering degree",
+    numberRows: 2,
+    text: [
+      "National University of Food Technologies, ",
+      "Faculty of Mechanics",
+      "Kyiv, Ukraine",
+      "Specialization: Equipment of the Pharmaceutical and Microbiological Industry.",
+    ],
+  },
+];
+//=======================================
 
 //SLIDER============================
 export const slider = [

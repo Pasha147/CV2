@@ -1,0 +1,67 @@
+.educationArt {
+  height: auto;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 0 0.5rem;
+  .img_cont {
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      width: 45%;
+      margin: 0.25rem;
+      border: 1px solid rgba(93, 199, 248, 0.466);
+      box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.829);
+      border-radius: 0.5rem;
+    }
+  }
+  .article {
+    position: relative;
+    h2 {
+      max-width: 84%;
+      text-align: start;
+    }
+  }
+  .moreBtn {
+    color: rgba(93, 199, 248, 0.959);
+    text-shadow: 0 0 4px white;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: inherit;
+  }
+  h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 0.25rem;
+    margin-top: 0.8rem;
+  }
+  .underline {
+    margin: 0.25rem auto;
+    transition: 0.3s all ease-in;
+    align-self: center;
+    box-shadow: 0 0 1rem #ffffffe3;
+    // margin-top: 0.5rem;
+    height: 2px;
+    width: 97%;
+    background-color: #8fafd465;
+    ::after {
+      content: "";
+    }
+  }
+}
+
+.light .educationArt {
+  color: black;
+  .moreBtn {
+    color: rgba(9, 17, 20, 0.959);
+    text-shadow: 0 0 4px rgba(27, 27, 27, 0.863);
+  }
+  .underline {
+    box-shadow: 0 0 1rem rgba(7, 7, 7, 0.753);
+    background-color: rgba(7, 7, 7, 0.575);
+  }
+}
