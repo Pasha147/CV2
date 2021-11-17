@@ -16,10 +16,12 @@ import {
   SiWebstorm,
 } from "react-icons/si";
 import { GrHeroku } from "react-icons/gr";
-import { DiCss3, DiSass, DiPhotoshop } from "react-icons/di";
+import { DiCss3, DiSass, DiPhotoshop, DiJavascript1 } from "react-icons/di";
 import { BsBootstrap } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
 import { GiZeppelin } from "react-icons/gi";
+import { ImHtmlFive2 } from "react-icons/im";
+
 //===============================================
 
 export const contacts = [
@@ -148,9 +150,9 @@ export const mainArts = [
 
 //MAIN Animation==================
 export const mainAnim = [
-  <FaHtml5 className="card__icon" />,
+  <ImHtmlFive2 className="card__icon" />,
   <DiCss3 className="card__icon" />,
-  <IoLogoJavascript className="card__icon" />,
+  <DiJavascript1 className="card__icon" />,
   <FaReact className="card__icon" />,
   <SiRedux className="card__icon" />,
   <FaNodeJs className="card__icon" />,
