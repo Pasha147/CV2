@@ -87,9 +87,9 @@ export const nav = [
 export const mainArts = [
   {
     header: "Skills",
-    numberRows: 3,
+    numberRows: 4,
     text: [
-      "•	HTML, CSS (BEM), SASS (SCSS), Bootstrap, . . . ",
+      "•	HTML, CSS (BEM), SASS (SCSS), Bootstrap,... ",
       "• JavaScript (ES6), React, Redux, RxJS, . . . ",
       "• Node JS (Express, ejs, . . .)",
       "•	Git, Gulp, Firebase, Heroku, Netlyfy,. . . ",
@@ -112,30 +112,42 @@ export const mainArts = [
   },
   {
     header: "Work experience",
-    numberRows: 1,
+    numberRows: 2,
     text: [
-      "• July 2000-now S.P. Timoshenko Institute of Mechanics",
+      "• 2021-now",
+      "Freelance Web Developer",
+      "Several projects have been created",
+      '- Web site for "ГипсокартонПро"',
+      "https://gipsokartonpro1014.netlify.app/",
+      "- The application for tutors",
+      "https://github.com/Pasha147/MySchool",
+    ],
+  },
+  {
+    header: "",
+    numberRows: 3,
+    text: [
+      "• July 2000-now",
+      " S.P. Timoshenko Institute of Mechanics",
       "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 2008- now Senior Researcher",
       "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 2006-2008 Research Scientist",
       "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 2004-2006 Junior Research Scientist",
       "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 2000-2004 Engineer",
       "Job description:",
-      "•	Development and software implementation of numerical analytical procedures in various programming languages and mathematical packages.",
-      "•	Collection, analysis, statistical processing and interpretation of experimental data.",
-      "•	Development, modernization and numerical testing of mathematical models.",
-      "•	Publishing scientific articles.",
-      "•	Lead projects with young scientists.",
+      " -	Development and software implementation of numerical analytical procedures in various programming languages and mathematical packages.",
+      " -	Collection, analysis, statistical processing and interpretation of experimental data.",
+      " -	Development, modernization and numerical testing of mathematical models.",
+      " -	Publishing scientific articles.",
+      "	- Lead projects with young scientists.",
     ],
   },
   {
     header: "",
-    numberRows: 1,
-    text: ["• 2020-now Freelance Web Developer"],
-  },
-  {
-    header: "",
-    numberRows: 1,
-    text: ["• September 2006-2020 Freelance tutor in mathematics and physics"],
+    numberRows: 2,
+    text: [
+      "• September 2006-2020",
+      "Freelance tutor in mathematics and physics",
+    ],
   },
   {
     header: "Languages",
@@ -367,6 +379,22 @@ export const skills = [
 //EDUCATION==========================
 export const educationArts = [
   {
+    header: "• 2020 - now Self-education",
+    numberRows: 3,
+    text: [
+      "Graduated from many online courses in web development",
+      "Sources:",
+      "- Youtube chanel: freeCodeCamp,",
+      "- Youtube chanel: Vladilen Minin,",
+      "- Youtube chanel: webDev,",
+      "- Youtube chanel: ITVDN",
+      ". . .",
+      "- learn.javascript.ru,",
+      "- JavaScript for Kids. By Nick Morgan,",
+      ". . .",
+    ],
+  },
+  {
     header: "• 2006 - Ph.D. in Engineering sciences (Solid Mechanics)",
     numberRows: 2,
     text: [
@@ -375,7 +403,6 @@ export const educationArts = [
       "Kyiv, Ukraine",
       "Thesis Topic: “Nonlinear creep of viscoelastic one-directional fibrous composites and their components under tension.” ",
     ],
-    img: "",
   },
   {
     header: "•	2002 - Master’s engineering degree",
@@ -388,6 +415,61 @@ export const educationArts = [
     ],
   },
 ];
+//=======================================
+
+//WORK EXPERIENCE==========================
+export const workExpArts = [
+  {
+    header: "• 2021-now Freelance Web Developer",
+    numberRows: 3,
+    text: [
+      "Job description:",
+      "Several projects have been created",
+      '- Web site for "ГипсокартонПро"',
+      "https://gipsokartonpro1014.netlify.app/",
+      "- The application for tutors",
+      "https://github.com/Pasha147/MySchool",
+    ],
+  },
+  {
+    header: "• July 2000-now S.P.Timoshenko Institute of Mechanics",
+    numberRows: 2,
+    text: [
+      "",
+      "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 2008- now Senior Researcher",
+      "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 2006-2008 Research Scientist",
+      "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 2004-2006 Junior Research Scientist",
+      "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 2000-2004 Engineer",
+      "Job description:",
+      "•	Development and software implementation of numerical analytical procedures in various programming languages and mathematical packages.",
+      "•	Collection, analysis, statistical processing and interpretation of experimental data.",
+      "•	Development, modernization and numerical testing of mathematical models.",
+      "•	Publishing scientific articles.",
+      "•	Lead projects with young scientists.",
+    ],
+    img: "",
+  },
+
+  {
+    header: "• September 2006-2020 Freelance tutor in mathematics and physics",
+    numberRows: 1,
+    text: [""],
+  },
+];
+
+// - July 2000-now S.P. Timoshenko Institute of Mechanics, Kyiv, Ukraine, Department of Mechanics of Creep
+// 2008- now Senior Researcher
+// 2006-2008 Research Scientist
+// 2004-2006 Junior Research Scientist
+// 2000-2004 Engineer
+// Job description:
+// •	Development and software implementation of numerical analytical procedures in various programming languages and mathematical packages.
+// •	Collection, analysis, statistical processing and interpretation of experimental data.
+// •	Development, modernization and numerical testing of mathematical models.
+// •	Publishing scientific articles.
+// •	Lead projects with young scientists.
+// - September 2006-now Freelance tutor in mathematics and physics
+
 //=======================================
 
 //SLIDER============================

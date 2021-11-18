@@ -26,7 +26,7 @@ function Mainart() {
               .map((item, index) => {
                 return <p key={index}>{item}</p>;
               })}
-            {art.text.length > 1 && (
+            {art.text.length > 2 && (
               <button className="moreBtn" onClick={() => moreClick(indexArt)}>
                 {!moreArr[indexArt] ? "more . . ." : "less . . ."}
               </button>

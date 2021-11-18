@@ -5,7 +5,7 @@ import { educationArts } from "../../appdata";
 
 function Education() {
   const [moreArr, setMoreArr] = useState(
-    new Array(educationArts.length).fill(true)
+    new Array(educationArts.length).fill(false)
   );
 
   const moreClick = (indexArt) => {
