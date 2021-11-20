@@ -1,0 +1,44 @@
+.projects {
+  height: auto;
+  .projectsAnim {
+    overflow: hidden;
+    // border: white solid 1px;
+    height: 17rem;
+    width: 100%;
+    position: relative;
+  }
+  .card {
+    color: rgb(130, 217, 233);
+    text-shadow: 0 0 3px rgb(5, 5, 5);
+    transition: 1s ease-in;
+    transition-property: transform, opacity;
+    position: absolute;
+    width: 9rem;
+    height: auto;
+    // border: springgreen 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 0;
+
+    img {
+      width: 100%;
+      max-height: 7rem;
+      object-fit: cover;
+      // border: 1px solid rgba(255, 255, 255, 0.932);
+      border-radius: 0.5rem;
+      box-shadow: 0 0 0.5rem white;
+    }
+  }
+  .cardActive {
+    transition: 0.1s all ease-in;
+    background-color: rgba(27, 121, 165, 0.795);
+    border: rgb(253, 253, 253) 2px solid;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 1rem rgb(253, 253, 253);
+    z-index: 1;
+    transform: scale(1.5, 1.5);
+  }
+}

@@ -472,6 +472,132 @@ export const workExpArts = [
 
 //=======================================
 
+//PROJECTS===============================
+export const projInfo = [
+  {
+    img: "./img/projects/1.jpg",
+    name: "Qbasic",
+    text: "",
+    position1: {
+      bottom: "50%",
+      left: "80%",
+      transform: "rotate(0deg) ",
+    },
+  },
+  {
+    //Regr
+    img: "./img/projects/2.jpg",
+    name: "C++",
+    text: "",
+    position1: {
+      bottom: "35%",
+      left: "80%",
+      transform: "rotate(0deg) ",
+    },
+  },
+  {
+    //Volcano
+    img: "./img/projects/3.jpg",
+    name: "C#",
+    text: "",
+    position1: {
+      bottom: "20%",
+      left: "65%",
+      transform: "rotate(-3deg) ",
+    },
+  },
+  {
+    //C#
+    img: "./img/projects/4.jpg",
+    name: "C#",
+    text: "",
+    position1: {
+      bottom: "7%",
+      left: "65%",
+      transform: "rotate(3deg) ",
+    },
+  },
+  {
+    //Arduino
+    img: "./img/projects/5.jpg",
+    name: "Arduino",
+    text: "",
+    position1: {
+      bottom: "7%",
+      left: "45%",
+      transform: "rotate(-1deg) ",
+    },
+  },
+  {
+    //Matlab
+    img: "./img/projects/6.jpg",
+    name: "Matlab",
+    text: "",
+    position1: {
+      bottom: "50%",
+      left: "45%",
+      transform: "rotate(5deg) ",
+    },
+  },
+  {
+    //timer
+    img: "./img/projects/11.jpg",
+    name: "RxJS",
+    text: "",
+    position1: {
+      bottom: "25%",
+      left: "30%",
+      transform: "rotate(1deg) ",
+    },
+  },
+  {
+    //Bee
+    img: "./img/projects/10.jpg",
+    name: "Vanilla JS",
+    text: "",
+    position1: {
+      bottom: "52%",
+      left: "18%",
+      transform: "rotate(1deg) ",
+    },
+  },
+  {
+    //MySchool
+    img: "./img/projects/7.jpg",
+    name: "JS React",
+    text: "",
+    position1: {
+      bottom: "8%",
+      left: "20%",
+      transform: "rotate(4deg) ",
+    },
+  },
+
+  {
+    //CV1
+    img: "./img/projects/8.jpg",
+    name: "HTML SCSS",
+    text: "",
+    position1: {
+      bottom: "5%",
+      left: "1%",
+      transform: "rotate(-4deg) ",
+    },
+  },
+  {
+    //Gips
+    img: "./img/projects/9.jpg",
+    name: "JS React",
+    text: "",
+    position1: {
+      bottom: "48%",
+      left: "2%",
+      transform: "rotate(5deg) ",
+    },
+  },
+];
+//=======================================
+
 //SLIDER============================
 export const slider = [
   {
