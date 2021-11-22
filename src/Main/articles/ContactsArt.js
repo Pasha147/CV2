@@ -21,7 +21,7 @@ function ContactsArt() {
         <div>
           <FiPhone className="contacts__item" />
         </div>
-        <p>(093) 843-77-77</p>
+        <p>(093) 843-79-68</p>
       </div>
       <div className="underline"></div>
       <div className="itemConteiner">
@@ -35,7 +35,7 @@ function ContactsArt() {
         <div>
           <AiOutlineSkype className="contacts__item" />
         </div>
-        <p>pasha147223@gmail.com</p>
+        <p>pasha147223</p>
       </div>
       <div className="underline"></div>
       <div className="itemConteiner">
