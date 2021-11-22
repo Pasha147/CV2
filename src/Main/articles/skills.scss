@@ -57,27 +57,29 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-  .card {
-    // text-align: center;
-    margin: 0.5rem 0.25rem;
-    border: rgba(255, 255, 255, 0.459) solid 1px;
-    box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.616);
 
-    border-radius: 8px;
-    width: 7.4rem;
-    height: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(84, 120, 141, 0.685);
-    &__icon {
-      width: 2rem;
-      height: 2rem;
-      margin: 0.25rem auto;
+    .cardSkill {
+      // text-align: center;
+      margin: 0.5rem 0.25rem;
+      border: rgba(255, 255, 255, 0.459) solid 1px;
+      box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.616);
+
+      border-radius: 8px;
+      width: 7.4rem;
+      height: 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(84, 120, 141, 0.685);
+      &__icon {
+        width: 2rem;
+        height: 2rem;
+        margin: 0.25rem auto;
+      }
     }
   }
+
   .underline {
     margin: 0 auto;
     transition: 0.3s all ease-in;

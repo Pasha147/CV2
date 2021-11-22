@@ -4,25 +4,6 @@
   // border: 2px solid rgb(97, 204, 93);
   display: flex;
   flex-direction: column;
-  // button {
-  //   background-image: linear-gradient(
-  //       to bottom,
-  //       rgba(150, 150, 150, 0.5),
-  //       rgba(39, 39, 39, 0.87)
-  //     ),
-  //     url("../img/river1.jpg");
-
-  //   min-width: 6rem;
-  //   margin: 0.25rem 0.15rem;
-  //   height: 1.8rem;
-  //   text-shadow: 0 0 3px rgba(18, 18, 19, 0.5);
-  //   font-size: 1rem;
-  //   font-weight: 600;
-  //   padding: 0 0.25rem;
-  //   background-color: rgba(189, 216, 238, 0.747);
-  //   border-radius: 0.25rem;
-  //   box-shadow: 0 0 0.25rem rgba(189, 216, 238, 0.562);
-  // }
 }
 
 .navLink {
@@ -59,25 +40,7 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  // button {
-  //   background-image: linear-gradient(
-  //       to bottom,
-  //       rgba(150, 150, 150, 0.5),
-  //       rgba(39, 39, 39, 0.87)
-  //     ),
-  //     url("../img/river1.jpg");
 
-  //   min-width: 6rem;
-  //   margin: 0.25rem 0.15rem;
-  //   height: 1.8rem;
-  //   text-shadow: 0 0 3px rgba(18, 18, 19, 0.5);
-  //   font-size: 1rem;
-  //   font-weight: 600;
-  //   padding: 0 0.25rem;
-  //   background-color: rgba(189, 216, 238, 0.747);
-  //   border-radius: 0.25rem;
-  //   box-shadow: 0 0 0.25rem rgba(189, 216, 238, 0.562);
-  // }
   .navBtn-active {
     text-shadow: 0 0 3px rgba(231, 231, 233, 0.5);
     color: rgba(255, 255, 255, 0.705);

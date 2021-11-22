@@ -1,54 +1,60 @@
-import React, { useEffect, useState } from "react";
-import "./projectsanim.scss";
-import { mainAnim } from "../../appdata";
+import React, { useState, useEffect } from "react";
 
-function Projectsanim() {
-  const [position, setPosition] = useState(
-    new Array(mainAnim.length).fill({
-      bottom: "20%",
-      left: "40%",
-      opacity: "0",
-    })
-  );
+import "./projectsanim.scss";
+
+function Projectsanim({ projInfo, curProj, setCurProj }) {
+  const [position, setPosition] = useState(0);
+  // const [curProj, setCurProj] = useState(projInfo.length - 1);
 
   useEffect(() => {
-    let newPosition = [...position];
-
-    newPosition = newPosition.map((item, i) => {
-      const n = newPosition.length;
-      let newLeft = `${Math.round((90 * i) / n) + 2.5}%`;
-      let newBottom = `${(Math.round(Math.random() * 4) - 2) * 10 + 18}%`;
-      return {
-        bottom: newBottom,
-        left: newLeft,
-        opacity: "100%",
-        // width: "4rem",
-        // height: "4rem",
-      };
-    });
-    // console.log(newPosition);
-    let time = 500 / position.length;
-    let newPosition1 = [...position];
-    position.map((item, index) => {
-      let time1 = time * index + 200;
-      const timeout = setTimeout(() => {
-        newPosition1[index] = newPosition[index];
-        setPosition([...newPosition1]);
-      }, time1);
-      return () => clearTimeout(timeout);
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const timeout = setTimeout(() => {
+      setPosition(1);
+    }, 200);
+    return () => clearTimeout(timeout);
   }, []);
+
+  const projectCard = (item, index) => {
+    let newPosition = {};
+    if (position === 0) {
+      newPosition = {
+        opacity: "1%",
+        bottom: item.position1.bottom,
+        left: item.position1.left,
+        transform: "scale(0.1, 0.1)",
+      };
+    }
+    if (position === 1) {
+      newPosition = { ...item.position1, opacity: "100%" };
+      if (index === curProj) {
+        newPosition.transform = newPosition.transform + "scale(1.2, 1.2)";
+      } else {
+        newPosition.transform = newPosition.transform + "scale(1, 1)";
+      }
+    }
+
+    // console.log("newPosition", newPosition);
+    return (
+      <div
+        onClick={() => {
+          setCurProj(index);
+        }}
+        className={`card ${index === curProj && "cardActive"}`}
+        key={index}
+        style={newPosition}
+      >
+        <img src={item.img} alt="proj" />
+        <p>{item.name}</p>
+        {/* <p>{item.text}</p> */}
+      </div>
+    );
+  };
 
   return (
     <div className="projectsAnim">
-      {mainAnim.map((icon, index) => {
-        return (
-          <div key={index} className="card" style={position[index]}>
-            {icon}
-          </div>
-        );
+      {projInfo.map((item, index) => {
+        return projectCard(item, index);
       })}
+      <div className="underline-vert"></div>
     </div>
   );
 }

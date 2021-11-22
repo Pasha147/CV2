@@ -1,64 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import "./projects.scss";
 import { projInfo } from "../../appdata";
+import Projectsanim from "./Projectsanim";
 
 function Projects() {
-  const [position, setPosition] = useState(0);
   const [curProj, setCurProj] = useState(projInfo.length - 1);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setPosition(1);
-    }, 200);
-    return () => clearTimeout(timeout);
-  }, []);
-
-  const projectCard = (item, index) => {
-    let newPosition = {};
-    if (position === 0) {
-      newPosition = {
-        opacity: "1%",
-        bottom: item.position1.bottom,
-        left: item.position1.left,
-        transform: "scale(0.1, 0.1)",
-      };
-    }
-    if (position === 1) {
-      newPosition = { ...item.position1, opacity: "100%" };
-      if (index === curProj) {
-        newPosition.transform = newPosition.transform + "scale(1.2, 1.2)";
-      } else {
-        newPosition.transform = newPosition.transform + "scale(1, 1)";
-      }
-    }
-
-    // console.log("newPosition", newPosition);
-    return (
-      <div
-        onClick={() => {
-          setCurProj(index);
-        }}
-        className={`card ${index === curProj && "cardActive"}`}
-        key={index}
-        style={newPosition}
-      >
-        <img src={item.img} alt="proj" />
-        <p>{item.name}</p>
-        <p>{item.text}</p>
-      </div>
-    );
-  };
 
   return (
     <article className="projects">
-      <div className="projectsAnim">
-        {projInfo.map((item, index) => {
-          return projectCard(item, index);
-        })}
-      </div>
+      <h2>MY PROJECTS</h2>
+      <p>(Try to click one of them to view the description)</p>
 
-      <div className="projectArt">curent project</div>
+      <Projectsanim
+        projInfo={projInfo}
+        curProj={curProj}
+        setCurProj={setCurProj}
+      />
+      <div className="separ">
+        <span className="separ__left">JS</span>
+        <span className="separ__right">Other languages</span>
+      </div>
+      <div className="underline"></div>
+      <div className="projectArt">
+        {/* <p>{`curent project ${curProj}`}</p> */}
+        {projInfo[curProj].header}
+        <img src={projInfo[curProj].img} alt="Pr_img" />
+        {projInfo[curProj].text}
+      </div>
     </article>
   );
 }

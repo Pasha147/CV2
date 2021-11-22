@@ -16,7 +16,7 @@ function Skills() {
   // console.log("types:>>", types);
   const skillCard = (item) => {
     return (
-      <div className="card" key={item.id}>
+      <div className="cardSkill" key={item.id}>
         {item.icon}
         <p>{item.name}</p>
         <p>{item.text}</p>

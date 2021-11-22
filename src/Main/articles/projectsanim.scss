@@ -1,29 +1,61 @@
 .projectsAnim {
-  height: 8rem;
-  //   border: brown 1px solid;
+  overflow: hidden;
+  // border: white solid 1px;
+  height: 17rem;
+  width: 100%;
   position: relative;
+
   .card {
-    $d: 0;
-    width: $d;
-    height: $d;
-    background: rgba(44, 90, 121, 0.918);
-    border-radius: 0.6rem;
-    border: 2px solid rgba(255, 255, 255, 0.281);
-    box-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.959);
+    color: rgb(130, 217, 233);
+    text-shadow: 0 0 3px rgb(5, 5, 5);
+    transition: 1s ease-in;
+    transition-property: transform, opacity;
+    position: absolute;
+    width: 9rem;
+    height: auto;
+    // border: springgreen 1px solid;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    $d: 5rem;
-    width: $d;
-    height: $d;
+    text-align: center;
+    z-index: 0;
+  }
+  img {
+    width: 100%;
+    max-height: 7rem;
+    object-fit: cover;
+    // border: 1px solid rgba(255, 255, 255, 0.932);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem white;
+  }
 
-    transition: 1s all ease-in;
-    .card__icon {
-      width: 90%;
-      height: 90%;
+  .underline-vert {
+    position: absolute;
+    z-index: 2;
+    left: 58%;
+    bottom: 0;
+    margin: 0.25rem auto;
+    transition: 0.3s all ease-in;
+    align-self: center;
+    box-shadow: 0 0 1rem #fffffffa;
+    // margin-top: 0.5rem;
+    height: 97%;
+    width: 8px;
+    background-color: #3b6f92c7;
+    border-radius: 0.5rem;
+    ::after {
+      content: "";
     }
+  }
+
+  .cardActive {
+    transition: 0.1s all ease-in;
+    background-color: rgba(27, 121, 165, 0.795);
+    border: rgb(253, 253, 253) 2px solid;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 1rem rgb(253, 253, 253);
+    z-index: 1;
+    transform: scale(1.5, 1.5);
   }
 }

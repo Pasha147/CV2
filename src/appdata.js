@@ -475,6 +475,18 @@ export const workExpArts = [
 //PROJECTS===============================
 export const projInfo = [
   {
+    //Matlab
+    img: "./img/projects/6.jpg",
+    name: "Matlab",
+    text: "",
+    position1: {
+      bottom: "50%",
+      left: "50%",
+      transform: "rotate(5deg) ",
+    },
+  },
+  {
+    //Qbasic
     img: "./img/projects/1.jpg",
     name: "Qbasic",
     text: "",
@@ -528,17 +540,7 @@ export const projInfo = [
       transform: "rotate(-1deg) ",
     },
   },
-  {
-    //Matlab
-    img: "./img/projects/6.jpg",
-    name: "Matlab",
-    text: "",
-    position1: {
-      bottom: "50%",
-      left: "45%",
-      transform: "rotate(5deg) ",
-    },
-  },
+
   {
     //timer
     img: "./img/projects/11.jpg",
@@ -557,8 +559,8 @@ export const projInfo = [
     text: "",
     position1: {
       bottom: "52%",
-      left: "18%",
-      transform: "rotate(1deg) ",
+      left: "25%",
+      transform: "rotate(-4deg) ",
     },
   },
   {
@@ -588,12 +590,20 @@ export const projInfo = [
     //Gips
     img: "./img/projects/9.jpg",
     name: "JS React",
-    text: "",
+
     position1: {
       bottom: "48%",
       left: "2%",
       transform: "rotate(5deg) ",
     },
+    header: "Гипсокартон Про",
+    text: (
+      <>
+        <p>Language: JS (React),</p>
+        <p>It's a web-site for "Гипсокартон Про" company.</p>
+        <a href="https://gipsokartonpro1014.netlify.app/">GipsokartonPro</a>
+      </>
+    ),
   },
 ];
 //=======================================
