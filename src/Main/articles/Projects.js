@@ -24,7 +24,7 @@ function Projects() {
       <div className="underline"></div>
       <div className="projectArt">
         {/* <p>{`curent project ${curProj}`}</p> */}
-        {projInfo[curProj].header}
+        <h2>{projInfo[curProj].header}</h2>
         <img src={projInfo[curProj].img} alt="Pr_img" />
         {projInfo[curProj].text}
       </div>
