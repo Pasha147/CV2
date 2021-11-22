@@ -425,7 +425,7 @@ export const workExpArts = [
     text: [
       "Job description:",
       "Several projects have been created",
-      '- Web site for "ГипсокартонПро"',
+      '- Web site for "ГипсокартонПро" company',
       "https://gipsokartonpro1014.netlify.app/",
       "- The application for tutors",
       "https://github.com/Pasha147/MySchool",

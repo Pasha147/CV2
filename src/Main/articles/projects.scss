@@ -52,6 +52,22 @@
       margin-left: 32%;
     }
   }
+  .buttons {
+    display: flex;
+    justify-content: center;
+
+    .prevBtn,
+    .nextBtn {
+      margin: 0.5rem 1rem;
+      // height: 1.6rem;
+      padding: 0.1rem 1rem;
+      background: linear-gradient(0.5turn, #368dc781, #27556952);
+      color: rgba(238, 245, 247, 0.774);
+      text-shadow: 0 0 2px rgba(231, 231, 233, 0.5);
+      font-size: 1rem;
+      box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.699);
+    }
+  }
 }
 
 .light .projects {

@@ -9,7 +9,7 @@ function Projects() {
 
   return (
     <article className="projects">
-      <h2>MY PROJECTS</h2>
+      <h2>SOME OF MY PROJECTS</h2>
       <p>(Try to click one of them to view the description)</p>
 
       <Projectsanim
@@ -22,6 +22,32 @@ function Projects() {
         <span className="separ__right">Other languages</span>
       </div>
       <div className="underline"></div>
+      <div className="buttons">
+        <button
+          className="prevBtn"
+          onClick={() => {
+            let newCurProj = curProj - 1;
+            if (newCurProj < 0) {
+              newCurProj = projInfo.length - 1;
+            }
+            setCurProj(newCurProj);
+          }}
+        >
+          {"<<<"}
+        </button>
+        <button
+          className="nextBtn"
+          onClick={() => {
+            let newCurProj = curProj + 1;
+            if (newCurProj > projInfo.length - 1) {
+              newCurProj = 0;
+            }
+            setCurProj(newCurProj);
+          }}
+        >
+          {">>>"}
+        </button>
+      </div>
       <div className="projectArt">
         {/* <p>{`curent project ${curProj}`}</p> */}
         <h2>{projInfo[curProj].header}</h2>
