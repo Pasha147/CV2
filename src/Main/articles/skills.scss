@@ -110,3 +110,12 @@
     color: rgba(255, 255, 255, 0.918);
   }
 }
+
+@media screen and (min-width: 800px) {
+  .skillsArt {
+    .skills {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}

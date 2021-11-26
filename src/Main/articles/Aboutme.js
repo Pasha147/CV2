@@ -27,7 +27,7 @@ function AboutMe() {
             <span className="age4">15</span>
             <span className="age5">XX</span>
           </div>
-          <p>My family (Me, my wife, my boys)</p>
+          <p>My family (Me, my wife and my boys)</p>
         </div>
 
         <div className="badHabits">

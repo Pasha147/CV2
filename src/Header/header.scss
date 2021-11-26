@@ -76,3 +76,16 @@
     box-shadow: 0 0 0.5rem #f7f7f79a;
   }
 }
+
+@media screen and (min-width: 800px) {
+  .header {
+    h1 {
+      font-size: 6.6rem;
+    }
+    &__logo {
+      img {
+        width: 12rem;
+      }
+    }
+  }
+}

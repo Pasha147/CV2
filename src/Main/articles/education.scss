@@ -68,3 +68,14 @@
     background-color: rgba(7, 7, 7, 0.575);
   }
 }
+
+@media screen and (min-width: 800px) {
+  .educationArt {
+    .img_cont {
+      height: 16rem;
+      img {
+        max-width: 20rem;
+      }
+    }
+  }
+}
