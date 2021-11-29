@@ -3,6 +3,6 @@ import { messageReducer } from "./messageReducer";
 import { skillsReducer } from "./skillsReducer";
 
 export const rootReducer = combineReducers({
-  message: messageReducer,
+  messages: messageReducer,
   skills: skillsReducer,
 });

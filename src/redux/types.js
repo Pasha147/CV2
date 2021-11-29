@@ -1,0 +1,3 @@
+export const CREATE_MESSAGE = "CONTACTS/CREATE_MESSAGE";
+export const FILTER_ON = "SKILLS/FILTER_ON";
+export const FILTER_OFF = "SKILLS/FILTER_OFF";
