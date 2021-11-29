@@ -59,3 +59,17 @@
     transform: scale(1.5, 1.5);
   }
 }
+@media screen and (min-width: 800px) {
+  .projectsAnim {
+    width: 90%;
+    margin: auto;
+    overflow: visible;
+    padding-top: 34rem;
+    .card {
+      width: 14rem;
+    }
+    img {
+      max-height: 14rem;
+    }
+  }
+}

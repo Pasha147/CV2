@@ -19,12 +19,14 @@
       content: "";
     }
   }
-  img {
-    height: 15rem;
-    max-width: 95%;
-  }
 
   .projectArt {
+    img {
+      height: 15rem;
+      max-width: 95%;
+      margin: 0.5rem auto;
+      text-align: center;
+    }
     a {
       display: block;
       text-align: start;
@@ -35,11 +37,6 @@
     p {
       text-align: start;
       text-indent: 20px;
-    }
-
-    img {
-      margin: 0.5rem auto;
-      text-align: center;
     }
   }
   .separ {
@@ -76,5 +73,13 @@
   .underline {
     box-shadow: 0 0 1rem rgba(7, 7, 7, 0.753);
     background-color: rgba(7, 7, 7, 0.575);
+  }
+}
+@media screen and (min-width: 800px) {
+  .projects .projectArt {
+    img {
+      height: 30rem;
+      // max-width: 95%;
+    }
   }
 }

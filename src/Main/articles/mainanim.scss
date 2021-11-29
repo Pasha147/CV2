@@ -3,9 +3,6 @@
   //   border: brown 1px solid;
   position: relative;
   .card {
-    $d: 0;
-    width: $d;
-    height: $d;
     background: rgba(44, 90, 121, 0.918);
     border-radius: 0.6rem;
     border: 2px solid rgba(255, 255, 255, 0.281);
@@ -24,6 +21,19 @@
     .card__icon {
       width: 90%;
       height: 90%;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .mainAnim {
+    margin-top: 2.5rem;
+    margin-left: 5%;
+    height: 10rem;
+    .card {
+      $d: 8rem;
+      width: $d;
+      height: $d;
     }
   }
 }

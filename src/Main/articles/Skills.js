@@ -1,9 +1,16 @@
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 import "./skills.scss";
 import { skills } from "../../appdata";
+import { filterOff, filterOn } from "../../redux/actions";
 
 function Skills() {
+  const dispatch = useDispatch();
+  const filter = useSelector((state) => {
+    // console.log("f>", state.skills.filter);
+    return state.skills.filter;
+  });
   //get types from skills
   const [types, setTypes] = useState(
     ["all", ...new Set(skills.map((item) => item.type))].map((e) => {
@@ -11,7 +18,7 @@ function Skills() {
     })
   );
 
-  const [filtersOn, setFiltersOn] = useState(false);
+  const [filtersOn, setFiltersOn] = useState(filter);
 
   // console.log("types:>>", types);
   const skillCard = (item) => {
@@ -45,6 +52,7 @@ function Skills() {
         <button
           className={`btn ${!filtersOn ? "btnOff" : ""}`}
           onClick={() => {
+            dispatch(filtersOn ? filterOff() : filterOn());
             setFiltersOn(!filtersOn);
           }}
         >

@@ -583,7 +583,7 @@ export const projInfo = [
         <p>Language: C# </p>
         <p>2016</p>
         <p>
-          The program is designed for the collection and processing of
+          The app has been designed for the collection and processing of
           experimental data presented in the form of graphs on paper.
         </p>
       </>

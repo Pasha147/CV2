@@ -4,7 +4,7 @@
   .iconsCont {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    // align-items: start;
     flex-wrap: wrap;
     // margin-bottom: 0.5rem;
     // border: 1px solid white;
@@ -14,14 +14,20 @@
       text-align: center;
       font-size: 1.1rem;
     }
-
+    $h: 7.2rem;
     .family {
+      min-width: 16rem;
+      max-width: 20rem;
+      width: 50%;
+      // min-width: 16rem;
+      // max-width: 18rem;
       //   padding: 00.25rem;
       .family__icons {
         position: relative;
-        width: 16.5rem;
-        height: 7rem;
-        margin-left: 0.25rem;
+        width: 100%;
+        height: $h;
+        margin-left: auto;
+        margin-right: auto;
         border: 2px solid white;
         border-radius: 0.8rem;
         background: rgba(255, 255, 255, 0.829);
@@ -80,13 +86,16 @@
       }
     }
     .badHabits {
-      width: 31%;
+      width: 30%;
+      max-width: 12rem;
+      min-width: 8rem;
+      // border: red 1px solid;
       padding: 0;
       margin: 0;
-      //   border: white 1px solid;
+
       .cards {
-        width: 100%;
-        height: 7.2rem;
+        // width: $h;
+        // height: $h;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -96,8 +105,8 @@
         .iconc {
           background: rgba(255, 255, 255, 0.829);
           border-radius: 0.4rem;
-          width: 45%;
-          height: 45%;
+          width: $h * 0.45;
+          height: $h * 0.45;
           margin: 0.2rem 0.1rem;
           display: flex;
           justify-content: center;
@@ -159,5 +168,14 @@
   .underline {
     box-shadow: 0 0 1rem rgba(7, 7, 7, 0.753);
     background-color: rgba(7, 7, 7, 0.219);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .aboutMe {
+    .sliderAboutMe {
+      height: 52rem;
+      width: 70%;
+    }
   }
 }
